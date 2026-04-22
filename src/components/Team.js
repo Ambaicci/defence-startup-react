@@ -1,4 +1,4 @@
-﻿function Team() {
+function Team() {
   return (
     <section id="team">
       <span className="section-tag">Leadership</span>

@@ -1,4 +1,4 @@
-﻿function IPrivacy() {
+function IPrivacy() {
   return (
     <section style={{background:'var(--dark)'}}>
       <span className="section-tag">Defensibility</span>

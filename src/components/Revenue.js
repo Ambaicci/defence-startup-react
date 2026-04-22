@@ -1,4 +1,4 @@
-﻿function Revenue() {
+function Revenue() {
   return (
     <section>
       <span className="section-tag">Business Model</span>

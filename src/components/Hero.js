@@ -1,4 +1,4 @@
-﻿function Hero() {
+function Hero() {
   return (
     <section className="hero-v4">
       {/* Full-bleed background with image */}

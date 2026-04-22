@@ -1,4 +1,4 @@
-﻿function Resilience() {
+function Resilience() {
   return (
     <section style={{background:'var(--dark)'}}>
       <span className="section-tag">Engineering for Combat</span>

@@ -1,4 +1,4 @@
-﻿function StrategicCrisis() {
+function StrategicCrisis() {
   return (
     <section className="problem" id="thesis">
       <span className="section-tag">The Strategic Crisis</span>

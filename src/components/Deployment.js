@@ -1,4 +1,4 @@
-﻿function Deployment() {
+function Deployment() {
   return (
     <section style={{background:'var(--dark)'}}>
       <span className="section-tag">Strategic Deployment</span>

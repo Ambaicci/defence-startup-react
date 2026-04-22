@@ -1,4 +1,4 @@
-﻿function Problem() {
+function Problem() {
   return (
     <section className="problem" id="problem">
       <span className="section-tag">The problem</span>

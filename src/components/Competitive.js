@@ -1,4 +1,4 @@
-﻿function Competitive() {
+function Competitive() {
   return (
     <section>
       <span className="section-tag">Market position</span>

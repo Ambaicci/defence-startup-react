@@ -1,4 +1,4 @@
-﻿import Scrollspy from 'react-scrollspy';
+import Scrollspy from 'react-scrollspy';
 
 function Navbar() {
   return (

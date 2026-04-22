@@ -1,4 +1,4 @@
-﻿function StatBar() {
+function StatBar() {
   return (
     <div className="stat-bar">
       <div className="stat-item">

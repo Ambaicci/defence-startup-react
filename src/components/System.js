@@ -1,4 +1,4 @@
-﻿import BattlefieldSimulator from './BattlefieldSimulator';
+import BattlefieldSimulator from './BattlefieldSimulator';
 
 function System() {
   return (

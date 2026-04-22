@@ -1,4 +1,4 @@
-﻿function Inevitability() {
+function Inevitability() {
   return (
     <section>
       <span className="section-tag">The Inevitability Framework</span>

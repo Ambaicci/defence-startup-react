@@ -1,4 +1,4 @@
-﻿function Footer() {
+function Footer() {
   return (
     <>
       <section className="cta-block" id="contact">

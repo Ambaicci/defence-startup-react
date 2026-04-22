@@ -1,4 +1,4 @@
-﻿function Roadmap() {
+function Roadmap() {
   return (
     <section id="roadmap" style={{background:'var(--dark)'}}>
       <span className="section-tag">Execution plan</span>

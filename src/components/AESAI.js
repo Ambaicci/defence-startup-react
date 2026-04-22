@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 
 function AESAI() {
   const [threatSpeed, setThreatSpeed] = useState(185);
