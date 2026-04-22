@@ -1,30 +1,74 @@
 ﻿function Hero() {
   return (
-    <section className="hero">
-      <div className="hero-bg">
-        <div className="hero-grid"></div>
-        <div className="radar-ring" style={{width:'700px',height:'700px',top:'-200px',right:'-200px',animationDelay:'0s'}}></div>
-        <div className="radar-ring" style={{width:'500px',height:'500px',top:'-100px',right:'-100px',animationDelay:'2s'}}></div>
+    <section className="hero-v4">
+      {/* Full-bleed background with image */}
+      <div className="hero-v4-bg">
+        <div className="hero-v4-image"></div>
+        <div className="hero-v4-overlay"></div>
+        <div className="hero-v4-radar-bg"></div>
       </div>
-      <div className="hero-content">
-        <div className="hero-badge">
-          <div className="badge-dot"></div>
-          <span className="badge-text">Seed Stage · Prototyping Q4 2026</span>
-          <span className="stage-tag">TRL 3-4</span>
+      
+      <div className="hero-v4-container">
+        <div className="hero-v4-badge">
+          <span className="hero-v4-badge-dot"></span>
+          ANGEL'S EYE SYSTEMS — COUNTER-SWARM DIVISION
         </div>
-        <h1>The defender<br />finally wins<br /><em>on cost.</em></h1>
-        <p className="hero-sub">ANGEL'S EYE is building the first economically sustainable counter-swarm defense system. AI-guided interceptors from a mobile mother drone — designed to make mass drone attacks economically irrational.</p>
-        <div className="hero-actions">
-          <a className="btn-primary" href="#system">View the system →</a>
-          <a className="btn-ghost" href="#contact">Investor briefing</a>
+        
+        <h1 className="hero-v4-title">
+          Reversing the<br />
+          <span className="hero-v4-title-accent">economics of aerial warfare.</span>
+        </h1>
+        
+        <div className="hero-v4-stats-row">
+          <div className="hero-v4-stat-block">
+            <div className="hero-v4-stat-number">100:1</div>
+            <div className="hero-v4-stat-line"></div>
+            <div className="hero-v4-stat-label">Traditional defender deficit</div>
+          </div>
+          <div className="hero-v4-stat-arrow">→</div>
+          <div className="hero-v4-stat-block">
+            <div className="hero-v4-stat-number highlight">10:1</div>
+            <div className="hero-v4-stat-line highlight"></div>
+            <div className="hero-v4-stat-label">ANGEL'S EYE advantage</div>
+          </div>
+        </div>
+        
+        <p className="hero-v4-description">
+          The Shahed-136 costs $30,000. A Patriot interceptor costs $3,000,000. 
+          This 100:1 ratio is strategically unsustainable. ANGEL'S EYE reverses it.
+        </p>
+        
+        <div className="hero-v4-actions">
+          <a className="hero-v4-btn-primary" href="#system">
+            View capability
+            <span className="hero-v4-btn-arrow">→</span>
+          </a>
+          <a className="hero-v4-btn-secondary" href="#contact">
+            Investor relations
+          </a>
+        </div>
+        
+        <div className="hero-v4-meta">
+          <div className="hero-v4-meta-item">
+            <span>STATUS</span>
+            <strong>Active development · TRL 3-4</strong>
+          </div>
+          <div className="hero-v4-meta-item">
+            <span>PROTECTION</span>
+            <strong>Patents pending (US/EU) · ITAR</strong>
+          </div>
+          <div className="hero-v4-meta-item">
+            <span>FUNDING</span>
+            <strong>$3M seed · Open round</strong>
+          </div>
         </div>
       </div>
-      <div className="hero-scroll">
-        <div className="scroll-line"></div>
-        Seed funded · Patents pending
+      
+      <div className="hero-v4-scroll">
+        <span>SCROLL</span>
+        <div className="hero-v4-scroll-line"></div>
       </div>
     </section>
   );
 }
-
 export default Hero;

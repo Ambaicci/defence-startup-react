@@ -13,6 +13,7 @@ import Resilience from './components/Resilience';
 import Team from './components/Team';
 import Roadmap from './components/Roadmap';
 import Inevitability from './components/Inevitability';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Team />
       <Roadmap />
       <Inevitability />
+      <ContactForm />
       <Footer />
     </div>
   );
