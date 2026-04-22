@@ -28,9 +28,7 @@ function BattlefieldSimulator() {
   
   const DETECTION_RADIUS = 150;
   
-  // Spawn a threat at specific coordinates (manual click)
   const spawnThreatAt = (clickX, clickY) => {
-    // Find closest EYE to target
     let closestEye = EYES[0];
     let minDist = Infinity;
     EYES.forEach(eye => {
@@ -57,7 +55,6 @@ function BattlefieldSimulator() {
     setStats(prev => ({ ...prev, totalThreats: prev.totalThreats + 1, activeThreats: prev.activeThreats + 1 }));
   };
   
-  // Spawn autonomous wave
   const spawnWave = () => {
     if (!autoMode) return;
     const numThreats = Math.floor(Math.random() * 4) + 2;
@@ -98,7 +95,6 @@ function BattlefieldSimulator() {
     setStats(prev => ({ ...prev, totalThreats: prev.totalThreats + numThreats, activeThreats: prev.activeThreats + numThreats }));
   };
   
-  // Launch interceptor
   const launchInterceptor = (threat) => {
     const eye = EYES.find(e => e.id === threat.targetEye);
     if (!eye) return;
@@ -136,7 +132,6 @@ function BattlefieldSimulator() {
   // Game loop
   useEffect(() => {
     const gameLoop = setInterval(() => {
-      // Move threats and check detection
       setThreats(prev => {
         const moved = prev.map(t => ({
           ...t,
@@ -170,7 +165,6 @@ function BattlefieldSimulator() {
         return remaining;
       });
       
-      // Move interceptors and check kills
       setInterceptors(prev => {
         const updated = [];
         
@@ -207,7 +201,7 @@ function BattlefieldSimulator() {
     }, 35);
     
     return () => clearInterval(gameLoop);
-  }, []);
+  }, []); // Empty dependency array - game loop runs independently
   
   // Drawing
   useEffect(() => {
